@@ -1,0 +1,316 @@
+/*@import url(https://fonts.googleapis.com/css?family=Ubuntu+Condensed);*/
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body{
+	background-color: #222222;
+	margin: 0;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+header{
+	display:none;
+	position: relative;
+	min-height: 50px;
+	width: 100%;
+}
+
+
+#navButton{
+	cursor: pointer;
+	position: absolute;
+	fill:white !important;
+	top: 30px;
+	right: 80px;
+	z-index: 100;
+	color: white;
+}
+
+#navButtonSvg{
+	fill:white !important;
+}
+
+svg path{
+	transition: 0.1s;
+}
+
+.nav{
+	transition: 0.1s;
+	display: none;
+	position: absolute;
+	top: 20%;
+	border-radius: 2px;
+	right: 11%;
+	z-index: 100;
+	min-width: 250px;
+	background: #f2f2f2;
+}
+
+ul{
+	list-style: none;
+}
+
+li .nav{
+	border-bottom: 1px dotted #ccc
+}
+
+
+
+li a{
+	text-decoration: none;
+	color: #999;
+	padding-right: 140px;
+	text-transform: uppercase;
+}
+
+.addColorBorder{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10px;
+	background: transparent url(http://static.colourlovers.com/images/v4.0/_/misc/10-black.png) repeat scroll 0 0;
+}
+
+.alignCenter{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.aboutMeCard{
+	width: 100%;
+	min-height: 510px;
+	border: 20px solid rgba(0,0,0,.1);
+	border-radius: 10px;
+	max-width: 1200px;
+	margin: 30px auto;
+}
+
+.aboutMeCardp::selection {
+  background: #222222;
+}
+
+.aboutMeCard .SuperImage
+{
+	display: inline-block;
+	width: 500px;
+	min-height: 510px;
+	float:left;
+	background: url(/img/im3.jpg);
+	background-size:cover;
+	border-right: 1px solid dotted
+}
+
+article.content{
+	display: inline-block;
+	max-width: 58.3%;
+}
+
+article.content .title{
+	padding: 40px 90px;
+	margin-bottom: 10px;
+	color: gray;
+	position: relative;
+	border-bottom:4px solid rgba(128, 128, 128, 0.1);
+	text-transform: uppercase;
+	font-family: 'Brandon Grotesque Bold';
+}
+
+article.content .description{
+	padding: 30px 40px 25px 40px;
+	color:#7B7979;
+}
+
+article.content .social{
+	padding-top: 5px;
+	padding-left: 80px;
+	display: flex;
+	justify-content: center;
+}
+
+article.content .social .icon{
+	padding-right: 60px;
+	padding-bottom: 10px;
+}
+
+article.content .social .iconLabels{
+	text-decoration: none;
+	flex-basis: 110px;
+}
+
+article.content .social .icon:first-child{
+
+}
+
+.flags{
+	position: absolute;
+	float: right;
+	top: 40px;
+	right: 30px;
+}
+
+.myKnowledges{
+	background:#1BE7DC;
+	min-height: 500px;
+	width: 100%;
+	border-top: 10px solid rgba(0,0,0,.1);
+}
+
+.myRecentProjects{
+	background: #F91958;
+	border-top: 10px solid rgba(0,0,0,.1);
+	width: 100%;
+	min-height: 500px;
+}
+
+.myRecentProjects h1.title{
+	text-align: center;
+	margin-top: 40px;
+	color: white;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	letter-spacing: 10px;
+}
+
+.myRecentProjects li.project{
+	position: relative;
+	border-radius: 8px;
+	margin-top: 20px;
+	list-style: none;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.02), 0px 4px 10px 0px rgba(0,0,0,0.08);
+}
+
+.myRecentProjects li.project:last-child{
+	padding-bottom: 50px;
+}
+
+.myRecentProjects li.project .about{
+	width: 70%;
+	position: relative;
+	background: #FFF;
+	z-index:20;
+	min-height: 350px;
+	color: white;
+	-webkit-clip-path: polygon(0 0, 48% 0, 60% 100%, 0% 100%);
+	clip-path:polygon(0 0, 48% 0, 60% 100%, 0% 100%);
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	padding:10px;
+}
+
+.myRecentProjects li.project .about .title{
+	color:#292e31;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin-top: 60px;
+	margin-left: 40px;
+}
+
+.myRecentProjects li.project .about .description{
+	color: #5F6365;
+	width: 40%;
+	margin-top: 30px;
+	margin-left: 40px;
+	line-height: 20px;
+}
+
+.myRecentProjects li.project .about .creationDate{
+	color:#5F6365;
+	position: absolute;
+	left: 50px;
+	top:20px;
+}
+
+.myRecentProjects li.project .about .buttonURL{
+	padding: 10px 50px 10px 50px;
+	color: #CA024F;
+	font-weight: 300;
+	position: absolute;
+	bottom: 45px;
+	transition: 1s;
+	border:1px solid #EA4C89;
+	border-radius: 8px;
+	left: 50px;
+	box-sizing: border-box;
+}
+
+.myRecentProjects li.project .about .buttonURL:hover{
+	transition: 1s;
+	background:#EA4C89;
+	color:white;
+}
+
+.myRecentProjects li.project .image{
+	width: 67%;
+	height:370px;
+	display: inline-block;
+	background-size: cover;
+	top: 0;
+	right: 0;
+	position: absolute;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius
+}
+
+.footer{
+
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	padding-bottom: 20px;
+	border-top: 20px solid rgba(0,0,0,.1);
+	color: #969090;
+}
+
+
+@font-face {
+    font-family: 'Brandon Grotesque Bold';
+    src: url('/fonts/brandon-grotesque-bold/brandon_bld.eot');
+    src: url('/fonts/brandon-grotesque-bold/brandon_bld.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/brandon-grotesque-bold/brandon_bld.woff') format('woff'),
+         url('/fonts/brandon-grotesque-bold/brandon_bld.ttf') format('truetype'),
+         url('/fonts/brandon-grotesque-bold/brandon_bld.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque Regular';
+    src: url('/fonts/brandon-grotesque-regular/brandon_reg.eot');
+    src: url('/fonts/brandon-grotesque-regular/brandon_reg.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/brandon-grotesque-regular/brandon_reg.woff') format('woff'),
+         url('/fonts/brandon-grotesque-regular/brandon_reg.ttf') format('truetype'),
+         url('/fonts/brandon-grotesque-regular/brandon_reg.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Caecilia Light';
+    src: url('/fonts/c/brandon_reg.eot');
+    src: url('/fonts/caecilia/pmn_caecilia_45_light.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/caecilia/pmn_caecilia_45_light.woff') format('woff'),
+         url('/fonts/caecilia/pmn_caecilia_45_light.ttf') format('truetype'),
+         url('/fonts/caecilia/pmn_caecilia_45_light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bariol Regular';
+    src: url('/fonts/bariol/Bariol_Regular.eot');
+    src: url('/fonts/bariol/Bariol_Regular.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/bariol/Bariol_Regular.woff') format('woff'),
+         url('/fonts/bariol/Bariol_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
