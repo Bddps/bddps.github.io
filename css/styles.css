@@ -77,14 +77,12 @@ li a{
 }
 
 .alignCenter{
-	max-width: 1200px;
+	max-width: 1100px;
 	margin: 0 auto;
 }
 
 .aboutMeCard{
-	width: 100%;
 	min-height: 510px;
-	border: 20px solid rgba(0,0,0,.1);
 	border-radius: 10px;
 	max-width: 1200px;
 	margin: 30px auto;
@@ -97,20 +95,20 @@ li a{
 .aboutMeCard .SuperImage
 {
 	display: inline-block;
-	width: 500px;
-	min-height: 510px;
-	float:left;
+	width: 458px;
+	min-height: 489px;
+	float:right;
 	background: url(/img/im3.jpg);
 	background-size:cover;
 	border-right: 1px solid dotted
 }
 
-article.content{
+.content{
 	display: inline-block;
 	max-width: 58.3%;
 }
 
-article.content .title{
+.content .title{
 	padding: 40px 90px;
 	margin-bottom: 10px;
 	color: gray;
@@ -120,29 +118,31 @@ article.content .title{
 	font-family: 'Brandon Grotesque Bold';
 }
 
-article.content .description{
+.content .description{
 	padding: 30px 40px 25px 40px;
 	color:#7B7979;
+	font-size: 14px;
+	line-height: 20px;
 }
 
-article.content .social{
+.content .social{
 	padding-top: 5px;
 	padding-left: 80px;
 	display: flex;
 	justify-content: center;
 }
 
-article.content .social .icon{
+.content .social .icon{
 	padding-right: 60px;
 	padding-bottom: 10px;
 }
 
-article.content .social .iconLabels{
+.content .social .iconLabels{
 	text-decoration: none;
 	flex-basis: 110px;
 }
 
-article.content .social .icon:first-child{
+.content .social .icon:first-child{
 
 }
 
@@ -270,6 +270,116 @@ article.content .social .icon:first-child{
 	color: #969090;
 }
 
+@media screen and (max-width: 1117px){
+	.aboutMeCard .SuperImage{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width:768px){
+	.aboutMeCard{
+		margin: 0 auto;
+	}
+
+	.aboutMeCard .SuperImage{
+		width: 100%;
+		min-height: 300px;
+		float: left;
+		margin-bottom: 50px;
+	}
+
+	.flags{
+		top: initial;
+		bottom: 60px;
+	}
+
+	.content{
+		display: block;
+		max-width: 100%;
+	}
+
+	.content .title{
+	}
+
+	.content .social{
+		padding-bottom: 40px;
+		padding-left: 40px;
+	}
+
+	.content .social .icon{
+		padding-right: 60px;
+		padding-bottom: 10px;
+	}
+
+	.myRecentProjects li.project .about{
+		-webkit-clip-path: polygon(0 0, 82% 0, 63% 100%, 0% 100%);
+		clip-path:polygon(0 0, 82% 0, 63% 100%, 0% 100%);
+		min-height: 400px;
+		border-radius: 0;
+	}
+
+	.myRecentProjects li.project .image{
+		height: 420px;
+		border-radius: 0;
+	}
+
+	.myRecentProjects li.project:last-child{
+		padding-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.aboutMeCard{
+		margin: 0 auto;
+	}
+
+	.aboutMeCard .SuperImage{
+		width: 100%;
+		min-height: 300px;
+		float: left;
+		margin-bottom: 30px;
+	}
+
+	.flags{
+		top: initial;
+		bottom: 60px;
+	}
+
+	.content{
+		display: block;
+		max-width: 100%;
+	}
+
+	.content .title{
+		padding: 29px 40px;
+	}
+
+	.content .social{
+		padding-bottom: 40px;
+		padding-left: 40px;
+	}
+
+	.content .social .icon{
+		padding-right: 40px;
+		padding-bottom: 10px;
+	}
+
+	.myRecentProjects li.project .about{
+		-webkit-clip-path: polygon(0 0, 97% 0, 74% 100%, 0% 100%);
+		clip-path:polygon(0 0, 97% 0, 74% 100%, 0% 100%);
+		min-height: 500px;
+		border-radius: 0;
+	}
+
+	.myRecentProjects li.project .image{
+		height: 520px;
+		border-radius: 0;
+	}
+
+	.myRecentProjects li.project:last-child{
+		padding-bottom: 0;
+	}
+}
 
 @font-face {
     font-family: 'Brandon Grotesque Bold';
